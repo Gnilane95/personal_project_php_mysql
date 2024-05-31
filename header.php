@@ -165,23 +165,23 @@
         <!-- Fixed navbar -->
         <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">Application de commande</a>
+            <a class="navbar-brand" href="index.php">Application de commande</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav me-auto mb-2 mb-md-0">
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Accueil</a>
+                    <a class="nav-link <?php echo !empty($index)?"active" : "" ?>" aria-current="page" href="index.php">Accueil</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="articles.php">Articles</a>
+                    <a class="nav-link <?php echo !empty($articles)?"active" : "" ?>" href="articles.php">Articles</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="clients.php">Clients</a>
+                    <a class="nav-link <?php echo !empty($clients)?"active" : "" ?>" href="clients.php">Clients</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link " href="commandes.php">Commandes</a>
+                    <a class="nav-link <?php echo !empty($commandes)?"active" : "" ?>" href="commandes.php">Commandes</a>
                 </li>
             </ul>
             <form class="d-flex" role="search">
